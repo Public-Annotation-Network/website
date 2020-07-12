@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Public-Annotation-Network/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Public-Annotation-Network/website/issues"
+  },
+  "homepage": "https://github.com/Public-Annotation-Network/website#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
