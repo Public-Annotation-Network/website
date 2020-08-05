@@ -150,13 +150,14 @@ textarea {
 .main {
   &__navbar {
     display: grid;
-    grid-template-columns: 100px 1fr 230px 230px;
+    grid-template-columns: 100px 1fr minmax(auto, 230px) minmax(auto, 230px);
     height: $navbar-height;
     place-items: center;
     padding: 0px $standard-padding;
   }
   &__navbar-button {
-    width: 200px;
+    max-width: 200px;
+    width: 15vw;
     height: 50px;
     font-size: 1.5em;
     justify-self: start;
@@ -164,6 +165,7 @@ textarea {
 
   &__navbar-logo {
     max-height: 100px;
+    width: 20vw;
     justify-self: start;
   }
 
@@ -185,7 +187,7 @@ textarea {
     place-items: center;
 
     &--collapse-small {
-      @media only screen and (min-width: 600px) {
+      @media only screen and (max-width: 1500px) {
         grid-template-columns: none;
         grid-gap: 50px;
         place-items: center;
