@@ -130,6 +130,11 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center; }
+    @media only screen and (min-width: 600px) {
+      .hero-section--2-col--collapse-small {
+        grid-template-columns: none;
+        grid-gap: 50px;
+        place-items: center; } }
   .hero-section__text {
     display: grid; }
   .hero-section__content-image {
